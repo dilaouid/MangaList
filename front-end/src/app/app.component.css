@@ -1,0 +1,183 @@
+body {
+    background: rgb(6,3,48);
+}
+
+.parallax {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  .parallax-background {
+    width: 0px;
+    height: auto;
+    display: none;
+    filter: brightness(50%);
+  }
+  
+  .parallax-background, .parallax-placeholder {
+    filter: brightness(50%);
+  }
+  
+  .parallax-placeholder {
+    position: absolute;
+    z-index: -200;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .parallax-content {
+    min-height: 70vh;
+    padding: 2em 1rem;
+  }
+  
+  .parallax-content p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .parallax-content .btn {
+    width: 100px;
+    /*margin: auto;*/
+  }
+  
+  .parallax-content h1 {
+    font-family: arial black;
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .circle {
+    animation: animate 0.5s linear infinite;
+    background: linear-gradient(#840768, #ff502a);
+    border-radius: 50%;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    margin: -9px;
+  }
+  
+  .circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#840768, #ff502a);
+    border-radius: 50%;
+  }
+  
+  .circle span:nth-child(1) {
+    filter: blur(5px);
+  }
+  
+  .circle span:nth-child(1) {
+    filter: blur(5px);
+  }
+  
+  .circle span:nth-child(1) {
+    filter: blur(5px);
+  }
+  
+  .circle span:nth-child(2) {
+    filter: blur(10px);
+  }
+  
+  .circle span:nth-child(3) {
+    filter: blur(20px);
+  }
+  
+  .circle span:nth-child(4) {
+    filter: blur(40px);
+  }
+  
+  @keyframes animate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .thought {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    min-width: 40px;
+    max-width: 220px;
+    min-height: 40px;
+    margin: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .thought:before, .thought:after {
+    content: "";
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .thought:before {
+    width: 44px;
+    height: 44px;
+    top: -12px;
+    left: 28px;
+    box-shadow: -50px 30px 0 -12px #fff;
+  }
+  
+  .thought:after {
+    bottom: -10px;
+    right: 26px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 40px -34px 0 0 #fff, -28px -6px 0 -2px #fff, -24px 17px 0 -6px #fff, -5px 25px 0 -10px #fff;
+  }
+  
+  #form {
+    width: 400px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    background: linear-gradient(to left top, #481f41, #7d573d) fixed;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.8);
+    transition: all 0.5s;
+  }
+  
+  #form:hover {
+    border: 2px solid rgba(255,255,255,0.5);
+  }
+  
+  #form:focus {
+    border: 2px solid rgba(255,255,255,0.5);
+    background: linear-gradient(to left top, #813875, #c28860) fixed;
+  }
+  
+  figcaption {
+    width: 225px;
+    background: rgba(0,0,0,0.5);
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
